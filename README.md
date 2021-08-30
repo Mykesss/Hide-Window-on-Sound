@@ -1,2 +1,8 @@
-# Hide-Window-on-Sound
- Minimizes a window if microphone picks up a loud sound..
+Parents bursting through the door is magically lining up with fan-services scenes?! how..  
+*#noLifeProblems* 🔥😩
+
+## Requirements
+
+```
+pip install numpy sounddevice win32gui win32con keyboard
+```
