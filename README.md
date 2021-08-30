@@ -1,4 +1,4 @@
-Parents bursting through the door is magically lining up with fan-services scenes?! how..  
+Parents bursting through the door is magically lining up with fan-services scene?! how..  
 *#noLifeProblems* 🔥😩
 
 ## Requirements
