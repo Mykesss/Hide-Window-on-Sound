@@ -28,7 +28,7 @@ def printSound(indata, outdata, frames, time, status):
         minimizeWindow()
 
 volumeThreshold = 20
-applicationName = input("Enter application name(must be open): ")
+applicationName = input("Enter application name(must be open): ").lower()
 volumeThreshold = int(input("Set volume threshold(default at 20): "))
 userSavedVolume = volumeThreshold
 os.system("cls")
@@ -38,7 +38,7 @@ print("Press any key to pause/resume\n")
 openWindows = getAppList()
 paused = False
 for i in openWindows:
-    if applicationName in i[1]:
+    if applicationName in i[1].lower():
         windowHandle = i[0]
         windowName = i[1]
         break
