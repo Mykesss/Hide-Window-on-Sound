@@ -4,5 +4,5 @@ Parents bursting through the door is magically lining up with fan-service scenes
 ## Requirements
 
 ```
-pip install numpy sounddevice win32gui win32con keyboard
+pip install numpy sounddevice pywin32 keyboard
 ```
