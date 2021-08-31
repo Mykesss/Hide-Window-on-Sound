@@ -44,12 +44,17 @@ for i in openWindows:
         break
 with sd.Stream(callback=printSound):
     while(True):
-        if keyboard.read_key() and paused == False:
-            volumeThreshold = 10000
-            paused = True
-            print("\tPaused")
-        elif keyboard.read_key() and paused == True:
-            volumeThreshold = userSavedVolume
-            paused = False
-            print("\tResuming")
-        sd.sleep(1000)
+        focusedWindow = win32gui.GetWindowText(win32gui.GetForegroundWindow())
+        if keyboard.read_key() and paused == False: #hating this function with passion
+            focusedWindow = win32gui.GetWindowText(win32gui.GetForegroundWindow())
+            if "py.exe" in focusedWindow:
+                volumeThreshold = 10000
+                paused = True
+                print("\tPaused")
+        elif keyboard.read_key()and paused == True:
+            focusedWindow = win32gui.GetWindowText(win32gui.GetForegroundWindow())
+            if "py.exe" in focusedWindow:
+                volumeThreshold = userSavedVolume
+                paused = False
+                print("\tResuming")
+        sd.sleep(500)
