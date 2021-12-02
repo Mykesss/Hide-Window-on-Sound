@@ -43,7 +43,7 @@ userSavedVolume = volumeThreshold
 os.system("cls")
 print("\t\tListening.......")
 print("You can now minimize this window or close to quit")
-print("Press any key to pause/resume\n")
+print("Press F4 to pause/resume\n")
 openWindows = getAppList()
 paused = False 
 for i in openWindows:
